@@ -4,22 +4,39 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Advanced HTML</title>
+    <link rel="stylesheet" href="/styles.css" />
+    <style>
+      a {
+        color: green;
+      }
+
+      p {
+        color: blue;
+      }
+    </style>
   </head>
   <body>
     <header>
       <img src="" alt="logo" />
       <nav>
-        <a href="">Pricing</a>
+        <a href="#" id="visited">Pricing</a>
         <a href="">About</a>
         <a href="">Affiliate</a>
         <a href="">Blog</a>
       </nav>
-      <div>
+      <div class="btns">
         <button>Start now</button>
         <button>Login</button>
       </div>
     </header>
     <main>
+      <!-- Inline Styling -->
+      <p style="color: red">
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Suscipit,
+        sunt?
+      </p>
+      <p>Lorem ipsum dolor sit amet.</p>
+      <p>ID < Class < element < 3external < 2internal < 1Inline</p>
       <form action="">
         <fieldset>
           <legend>Personal Information</legend>
@@ -29,8 +46,13 @@
           <label for="email">Email:</label>
           <input type="email" id="email" required /><br />
 
-          <label for="password">Password:</label>
-          <input type="password" id="password" required /><br />
+          <label for="password" class="password">Password:</label>
+          <input
+            type="password"
+            id="password"
+            class="password"
+            required
+          /><br />
         </fieldset>
 
         <fieldset>
@@ -79,7 +101,7 @@
       </form>
 
       <table>
-        <caption>
+        <caption class="bg-green">
           Calendar
         </caption>
 
@@ -93,7 +115,7 @@
           </tr>
         </thead>
 
-        <tbody>
+        <tbody class="bg-green">
           <tr>
             <th scope="row">Week 1</th>
             <td>present</td>
@@ -118,6 +140,16 @@
         </tbody>
       </table>
 
+      <ul class="bg-green">
+        <li class="bg-green">Sat</li>
+        <li class="bg-green">Sun</li>
+        <li class="bg-green">Mon</li>
+        <li class="bg-green">Tues</li>
+        <li class="bg-green">Wed</li>
+      </ul>
+
+      <h2>The box</h2>
+      <p id="box">Lorem ipsum dolor sit amet.</p>
     </main>
     <footer></footer>
   </body>
